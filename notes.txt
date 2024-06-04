@@ -1,0 +1,85 @@
+Git ve Terminal Komutları
+Terminal Komutları:
+ipconfig: Lokal IP adreslerini gösterir.
+pwd (print working directory): Bulunduğunuz dizini gösterir.
+cd (change directory): Dizinde gezinmek için kullanılır.
+cd ..: Bir önceki dizine döner.
+cd <folder name>: Belirtilen dizine girer.
+clear: Terminal ekranını temizler.
+mkdir <directory name>: Yeni bir dizin oluşturur.
+touch <file name>: Yeni bir dosya oluşturur.
+rm <file name>: Dosya siler.
+rm -rf <directory name>: Dizin ve içindeki tüm dosyaları siler.
+ls: Bulunduğunuz dizindeki tüm dosya ve dizinleri gösterir.
+ls -la: Gizli dosyalar dahil tüm dosya ve dizinleri gösterir.
+Git Kullanımı:
+Kullanıcı Bilgilerinin Ayarlanması:
+
+İsim belirleme: git config --global user.name "Omer MEMES"
+İsim gösterme: git config user.name
+Çıktı: Omer MEMES
+Email belirleme: git config --global user.email "oms83@gmail.com"
+Email gösterme: git config user.email
+Çıktı: oms83@gmail.com
+Ek bilgiler:
+
+Global kullanıcı ismi: git config --global user.name
+Global kullanıcı adı: git config --global user.username
+Global email: git config --global user.email
+Global şifre: git config --global user.password (Şifreyi bu şekilde saklamak güvenli değildir ve genellikle tavsiye edilmez.)
+Dosyaların Git'e Eklenmesi ve Commit İşlemleri:
+
+Çalışma dizini (working directory) => Index-Staging => Local repository
+
+Dosya ekleme: git add <file name>
+
+Commit atma: git commit -m "Commit mesajı"
+
+Tüm dosyaları ekleme: git add .
+
+Git log: git log (Atılan commit'leri ve detaylarını gösterir)
+
+Dosya ve Klasör Gizleme:
+
+.gitignore dosyası oluşturma: touch .gitignore
+Branch İşlemleri:
+
+Bulunduğumuz branch: git branch
+
+Branch oluşturma: git branch <branch name>
+
+Branch değiştirme: git switch <branch name>
+
+Branch birleştirme: git merge <branch name>
+
+Hangi branch'da olduğumuzu gösterir: git rev-parse --abbrev-ref HEAD
+
+Örnek:
+
+Main ve Feature branch'leri var. Feature'daki dosyaları main ile birleştirmek için önce main branch'a geçip git merge feature yazarak birleştirme işlemi yapılır.
+Fast-forward merge:
+
+Bir branch üzerinde değişiklik yapıp yeni bir branch oluşturduğunuzda, yeni branch eski branch'in son commit'ini alır. Eğer yeni branch üzerinde değişiklik yapmadan eski branch'e geri dönüp birleştirme yaparsanız, bir çakışma olmaz. Ancak eski branch üzerinde tekrar değişiklik yaparsanız çakışma olabilir.
+Stash İşlemleri:
+
+Git stash: Değişiklikleri geçici olarak saklar.
+Git stash pop: Saklanan değişiklikleri geri yükler.
+Git stash list: Saklanan değişikliklerin listesini gösterir.
+Git stash apply stash@{n}: Belirli bir saklanan değişikliği uygular.
+Dosya Geri Yükleme ve Reset İşlemleri:
+
+Git restore: Yeni eklenen ve henüz commit yapılmamış değişiklikleri siler.
+Git checkout: Commit'ler arasında gezinmeyi sağlar.
+Git reset <SHA commit ID>: Belirli bir commit'e kadar olan commit'leri siler.
+Örnek: git reset --hard 135e8d2c88d608beaf365d49564fc994fd17c84b
+Hem commit'leri hem de içeriklerini siler.
+Git revert <SHA commit ID>: Belirtilen commit'i geri alır.
+Örnek: git revert 3C
+1C, 2C, #3C#, 4C şeklinde geri alır.
+Farkları Gösterme:
+
+Git diff: Son commit ile şu andaki değişiklikler arasındaki farkları gösterir.
+Git diff --staged <file name>: Index'teki dosya ile depodaki dosya arasındaki farkları gösterir.
+Git show: Son commit ile bir önceki commit arasındaki farkları gösterir.
+Git diff <SHA1> <SHA2>: İki commit arasındaki farkları gösterir.
+Git diff main <location>: İki branch arasındaki farkları gösterir.
