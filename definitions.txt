@@ -1,0 +1,11 @@
+Git:
+
+Git, dağıtılmış bir versiyon kontrol sistemidir. Yazılım geliştirme projelerinde, kodun geçmişteki tüm sürümlerini takip etmeyi 
+ve farklı geliştiricilerin aynı projede eş zamanlı çalışmasını sağlar. Temel komutlar arasında commit, branch, merge, ve stash bulunur.
+
+
+GitHub:
+
+GitHub, Git depolarını barındıran ve geliştiricilerin işbirliği yapmasını sağlayan bir platformdur. 
+GitHub, projelerinizi çevrimiçi olarak depolamanıza, başkalarıyla paylaşmanıza ve diğer geliştiricilerle 
+birlikte çalışmanıza olanak tanır. GitHub ayrıca hata takibi, kod inceleme ve proje yönetimi gibi araçlar da sunar.
