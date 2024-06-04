@@ -1,0 +1,78 @@
+git init:
+
+Yeni bir Git deposu başlatır.
+git clone <repository URL>:
+
+Var olan bir depoyu klonlar.
+git status:
+
+Çalışma dizinindeki dosyaların durumunu gösterir.
+git add <file>:
+
+Dosyayı izlemeye ekler (staging area).
+git commit -m "mesaj":
+
+Eklenen dosyaları commit eder ve bir mesaj ekler.
+git log:
+
+Commit geçmişini gösterir.
+git diff:
+
+Çalışma dizinindeki değişiklikleri gösterir.
+git diff --staged:
+
+Staging area ile repository arasındaki farkları gösterir.
+git reset <commit>:
+
+Belirtilen commit'e geri döner.
+git reset --hard <commit>:
+
+Belirtilen commit'e geri döner ve çalışma dizinindeki değişiklikleri siler.
+git branch:
+
+Mevcut branch'leri listeler.
+git branch <branch name>:
+
+Yeni bir branch oluşturur.
+git switch <branch name>:
+
+Belirtilen branch'e geçer.
+git merge <branch name>:
+
+Belirtilen branch'i aktif branch ile birleştirir.
+git stash:
+
+Geçici olarak değişiklikleri saklar.
+git stash pop:
+
+En son saklanan değişiklikleri geri yükler.
+git stash list:
+
+Saklanan değişikliklerin listesini gösterir.
+git pull:
+
+Uzak depodan en son değişiklikleri indirir ve birleştirir.
+git push:
+
+Yerel commit'leri uzak depoya gönderir.
+git remote add <name> <URL>:
+
+Yeni bir uzak depo ekler.
+git remote -v:
+
+Uzak depoları listeler.
+git fetch:
+
+Uzak depodaki değişiklikleri yerel depoya indirir, ancak birleştirme yapmaz.
+git checkout <commit>:
+
+Belirtilen commit'e geçer.
+git revert <commit>:
+
+Belirtilen commit'i geri alır ve yeni bir commit oluşturur.
+git show <commit>:
+
+Belirtilen commit'in detaylarını gösterir.
+.gitignore dosyası:
+
+İçine yazılan dosya ve dizinlerin Git tarafından izlenmesini engeller.
